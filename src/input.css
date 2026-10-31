@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* Emerald (daun & teks EMERALD) */
+  --color-brand-50:  #ecf8f4;
+  --color-brand-100: #d0efe5;
+  --color-brand-500: #1a9a78;
+  --color-brand-600: #0f7a62;
+  --color-brand-700: #0b6150;
+  --color-brand-900: #0b2f27;
+
+  /* Gold (jejak pesawat & teks TRAVEL INDONESIA) */
+  --color-gold-400: #d9b865;
+  --color-gold-500: #c9a24b;
+  --color-gold-600: #a8822f;
+
+  --color-cream: #fbfaf6;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
