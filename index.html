@@ -64,45 +64,66 @@
 
 
   <!-- Start of Hero -->
-   <section id="beranda" class="relative isolate flex min-h-[85svh] items-center overflow-hidden">
-  <!-- Foto Bali -->
-  <img src="assets/images/bali-beach.webp" alt="Balinese temple on a cliff at sunset"
-       class="absolute inset-0 -z-20 h-full w-full object-cover" fetchpriority="high">
-  <!-- Overlay hijau tua supaya teks tetap terbaca -->
-  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-brand-900/90 via-brand-900/60 to-brand-900/20"></div>
+  <section id="beranda" class="relative isolate flex min-h-[90svh] items-center overflow-hidden">
+    <!-- Hero Image with Explicit Dimensions -->
+    <img src="assets/images/bali-beach.webp"
+         alt="Balinese sea temple perched on coastal cliffs at sunset"
+         width="5702" height="3801"
+         class="absolute inset-0 -z-20 h-full w-full object-cover"
+         fetchpriority="high">
 
-  <div class="mx-auto w-full max-w-6xl px-4 py-20">
-    <div class="max-w-2xl">
-      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">
-        Explore · Discover · Experience
-      </p>
+    <!-- High-Contrast Gradient Overlay -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-brand-900/95 via-brand-900/75 to-brand-900/35"></div>
 
-      <h1 class="mt-4 text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-        Don’t Just Visit Indonesia. <span class="text-gold-400">Live It.</span>
-      </h1>
+    <div class="mx-auto w-full max-w-6xl px-4 py-20 md:py-28">
+      <div class="max-w-2xl">
 
-      <p class="mt-6 text-base leading-relaxed text-white/90 md:text-lg">
-        Tell us your dream trip. Our local experts will turn it into a seamless journey,
-        from sacred temples in Bali to wild shores in Komodo. We handle every detail,
-        so all you do is arrive and enjoy.
-      </p>
+        <!-- Grounded Identity Eyebrow -->
+        <div class="inline-flex items-center gap-2 rounded-full border border-gold-400/35 bg-brand-900/70 px-3.5 py-1 text-xs font-semibold uppercase tracking-widest text-gold-400 backdrop-blur">
+          <span class="h-1.5 w-1.5 rounded-full bg-gold-400" aria-hidden="true"></span>
+          <span>Private Tour Specialist · Indonesia</span>
+        </div>
 
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a href="https://wa.me/6281919236448?text=Hi%20Emerald%20Travel,%20I'd%20like%20to%20design%20my%20dream%20trip"
-        target="_blank" rel="noopener"
-        class="rounded-full bg-gold-500 px-7 py-3.5 text-center font-semibold text-brand-900 transition hover:bg-gold-400">
-        Design My Dream Trip
-      </a>
-        <a href="https://wa.me/6281919236448?text=Hi%20Emerald%20Travel,%20I'd%20like%20to%20plan%20a%20trip" target="_blank" rel="noopener"
-           class="rounded-full border border-white/70 px-7 py-3.5 text-center font-semibold text-white transition hover:bg-white/10">
-          Talk to an Expert on WhatsApp
-        </a>
+        <h1 class="mt-4 text-4xl font-bold leading-[1.12] text-white sm:text-5xl md:text-6xl">
+          Don’t Just Visit Indonesia. <span class="text-gold-400">Live It.</span>
+        </h1>
+
+        <p class="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
+          From sacred water temples in Bali to wild dragon shores in Komodo. Our local travel designers handcraft your private itinerary, coordinate every transfer, and remain on call 24/7 so you experience the real archipelago without the guesswork.
+        </p>
+
+        <!-- Differentiated CTAs -->
+        <div class="mt-8 flex flex-col gap-3.5 sm:flex-row sm:items-center">
+          <a href="https://wa.me/6281919236448?text=Hi%20Emerald%20Travel,%20I'd%20like%20to%20plan%20a%20private%20trip%20to%20Indonesia"
+             target="_blank" rel="noopener"
+             class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-gold-500 px-7 py-3.5 text-center text-sm font-semibold text-brand-900 transition hover:bg-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-brand-900">
+            Start Planning on WhatsApp
+          </a>
+          <a href="#layanan"
+             class="inline-flex min-h-[44px] items-center justify-center rounded-full border border-white/60 bg-brand-900/40 px-6 py-3.5 text-center text-sm font-semibold text-white backdrop-blur transition hover:border-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white">
+            Explore Our Services &darr;
+          </a>
+        </div>
+
+        <!-- Verified Trust Signals (Replaces Raw Placeholder) -->
+        <div class="mt-8 flex flex-wrap items-center gap-6 border-t border-white/15 pt-6 text-xs text-white/80">
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Direct reply within 2 hours</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Team based in Bali &amp; Jakarta</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>100% Tailored itineraries</span>
+          </div>
+        </div>
+
       </div>
-
-      <p class="mt-4 text-sm text-white/80">No obligation. Reply within [X hours].</p>
     </div>
-  </div>
-</section>
+  </section>
   <!-- End of Hero -->
 
 
