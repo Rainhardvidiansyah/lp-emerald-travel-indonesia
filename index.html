@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="dist/output.css">
 
 
-
+  <script>document.documentElement.classList.add('js')</script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +60,7 @@
 
     <!-- Logo -->
     <a href="#beranda" class="flex items-center">
-      <img src="assets/images/emerald-travel-indonesia.png" alt="Emerald Travel Indonesia" class="h-9 w-auto mix-blend-multiply md:h-12">
+      <img src="assets/images/emerald-travel-indonesia-2.png" alt="Emerald Travel Indonesia" class="h-9 w-auto mix-blend-multiply md:h-12">
     </a>
 
     <!-- Menu desktop -->
@@ -1052,7 +1052,7 @@
     <!-- Brand -->
     <div>
       <a href="#beranda" class="inline-block rounded-xl bg-white px-4 py-2">
-        <img src="assets/images/emerald-travel-indonesia.png" alt="Emerald Travel Indonesia" class="h-10 w-auto">
+        <img src="assets/images/emerald-travel-indonesia-2.png" alt="Emerald Travel Indonesia" class="h-10 w-auto">
       </a>
       <p class="mt-5 max-w-xs leading-relaxed text-white/80">
         Your Trusted Travel Partner in Indonesia
@@ -1149,7 +1149,36 @@
   });
 </script>
 
+<script>
+  const targets = [];
+document.querySelectorAll('section .mx-auto').forEach(box => {
+  [...box.children].forEach(child => {
+    if (child.classList.contains('grid') || child.tagName === 'UL' || child.tagName === 'OL') {
+      [...child.children].forEach((c, i) => {
+        c.style.setProperty('--d', i * 130 + 'ms');
+        targets.push(c);
+      });
+    } else {
+      targets.push(child);
+    }
+  });
+});
 
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    el.classList.add('is-visible');
+    el.addEventListener('transitionend', () => {
+      el.classList.remove('reveal', 'is-visible');
+      el.style.removeProperty('--d');
+    }, { once: true });
+    io.unobserve(el);
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+targets.forEach(el => { el.classList.add('reveal'); io.observe(el); });
+</script>
 
 
 </body>
